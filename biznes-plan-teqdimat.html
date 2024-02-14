@@ -6,11 +6,23 @@
 -->
 <html>
 	<head>
-		<title>smeinc.az</title>
+		<title>Smeinc.az - Biznes-plan</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" href="images/favicon1.png" type="image/x-icon">
+		<script type="text/javascript" src="email/script.js"></script>
+		<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+		</script>
+		<script type="text/javascript">
+		   (function(){
+		      emailjs.init({
+		        publicKey: "Q664-5twSaIvpUf39",
+		      });
+		   })();
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -35,6 +47,7 @@
 								<li><a href="achievements.html">NƏALİYYƏTLƏR</a></li>
 								<li><a href="satis-kosk.html">Satış köşk</a></li>
 								<li><a href="businessmodel.html">Biznes plan</a></li>
+								<li><a href="numuneler.html">Nümunələr</a></li>
 								<li><a href="works.html">Xidmətlərimiz</a></li>
 								<li><a href="sponsorship.html">Referanslar</a></li>
 								<li><a href="trainings.html">Treninqlər</a></li>
@@ -128,47 +141,55 @@
 
 					</section>
 
-				<!-- Footer -->
-				<section id="footer">
-					<div class="inner">
-					  <h2 class="major">SME SIZIN EVINIZDIR!</h2>
-					  <p>Bir işə başlamazdan əvvəl məsləhət alın, zəng edin, soruşun! Xoşdur!</p>
-					  <form method="post" action="#">
-						<div class="fields">
-						  <div class="field">
-							<label for="name">Ad</label>
-							<input type="text" name="name" id="name" />
-						  </div>
-						  <div class="field">
-							<label for="email">Email</label>
-							<input type="email" name="email" id="email" />
-						  </div>
-						  <div class="field">
-							<label for="message">Mesaj</label>
-							<textarea name="message" id="message" rows="4"></textarea>
-						  </div>
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">SME SIZIN EVINIZDIR!</h2>
+							<p>Bir işə başlamazdan əvvəl məsləhət alın, zəng edin, soruşun! Xoşdur!</p>
+							<div id="form_div">
+							<form id="emailForm">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Ad</label>
+										<input type="text" name="name" required id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="email" name="email" required id="email" />
+									</div>
+									<div class="field">
+										<label for="message">İsmarıc</label>
+										<textarea name="message" id="message" required rows="4"></textarea>
+									</div>
+								</div>
+							</form>
+							<button style="width: 300px;" onclick="sendEmail()">Göndər</button>
+							</div>
+						
+							<ul class="contact">
+								<li class="icon solid fa-home">
+									<a target="_blank" href="https://www.google.com/maps/search/Marco+Computer+Technology/@40.3857298,49.8024087,17z?entry=ttu">
+										AZ1138, Bakı şəhəri, Yasamal rayonu,<br/>
+										Akim Abbasov küçəsi,<br/>
+										1"C" binası, ofis 15F
+									</a>
+								</li>
+								<li class="icon solid fa-phone">
+									<a href="tel:+994503115044">(050) 311-50-44</a>
+									<br/>
+									<a href="tel:+994125330111">(012) 533-01-11</a>
+								</li>
+								<li class="icon solid fa-envelope"><a href="#">info@smeinc.az</a></li>
+								<li class="icon brands fa-facebook-f"><a href="https://www.facebook.com/profile.php?id=61556454719906&mibextid=2JQ9oc" target="_blank">sme.az</a></li>
+								<li class="icon brands fa-instagram"><a href="https://www.instagram.com/sme.az/" target="_blank">sme.az</a></li>
+							</ul>
+							
+							<ul class="copyright">
+								<li>&copy; Smeinc.az. All rights reserved.</li>
+								<li><a href="https://www.instagram.com/tycoonfoan?igsh=NG5lbHFiMHVnMTNi" target="_blank">with tycoon afoan</a></li>
+							</ul>
+							
 						</div>
-						<ul class="actions">
-						  <li><input type="submit" value="Göndər" /></li>
-						</ul>
-					  </form>
-					  <ul class="contact">
-						<li class="icon solid fa-home">
-						  Untitled Inc<br />
-						  1234 Somewhere Road Suite #2894<br />
-						  Nashville, TN 00000-0000
-						</li>
-						<li class="icon solid fa-phone">(000) 000-0000</li>
-						<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-						<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-						<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-						<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
-					  </ul>
-					  <ul class="copyright">
-						<li>&copy; Untitled Inc. All rights reserved.</li>
-					  </ul>
-					</div>
-				  </section>
+					</section>
 
 			</div>
 

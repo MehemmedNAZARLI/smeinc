@@ -466,6 +466,10 @@ input, select, textarea {
 		.row > .col-6 {
 			width: 50%;
 		}
+		.row > .col-24 {
+			width: 80%;
+		}
+		
 
 		.row > .off-6 {
 			margin-left: 50%;
@@ -4038,9 +4042,10 @@ input, select, textarea {
 			width: 100%;
 		}
 
-		#footer .inner form {
+		#footer .inner #form_div {
 			margin: 0 3em 0 0;
 			width: calc(50% - 1.5em);
+			
 		}
 
 		#footer .inner .contact {
@@ -4104,7 +4109,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-				#footer .inner form {
+				#footer .inner #form_div {
 					width: 100%;
 					margin: 0 0 4em 0;
 				}
@@ -4131,7 +4136,7 @@ input, select, textarea {
 				padding: 2em 2em 0.1em 2em ;
 			}
 
-				#footer .inner form {
+				#footer .inner #form_div {
 					margin: 0 0 3em 0;
 				}
 
