@@ -16,10 +16,10 @@ function sendEmail() {
   };
       emailjs.send('service_e1x621r', 'template_wopcrlh', templateParams).then(
         (response) => {
-          alert('SUCCESS!', response.status, response.text);
+          alert('Təbriklər! İsmarıcınız göndərildi tez bir zamanda sizinlə əlaqə saxlanacaq', response.status, response.text);
         },
         (error) => {
-            alert('FAILED...', error);
+            alert('Nəsə yolunda getmədiç zəhmət olmasa birazdan yenidən cəhd edin', error);
         },
       );
 }
